@@ -30,36 +30,36 @@ def main():
 	# Convert the input image to grayscale
 	grayFace = cv2.cvtColor(inputImage, cv2.cv.CV_BGR2GRAY)
 
-	# # Get the rectangle bounding the left eye in the input image
-	# leftEye = faceFeatures.getLeftEye(grayFace)
-	# print 'leftEye: ', leftEye
+	# Get the rectangle bounding the left eye in the input image
+	leftEye = faceFeatures.getLeftEye(grayFace)
+	print 'leftEye: ', leftEye
 
-	# # Get the rectangle bounding the right eye in the input image
-	# rightEye = faceFeatures.getRightEye(grayFace)
-	# print 'rightEye: ', rightEye
+	# Get the rectangle bounding the right eye in the input image
+	rightEye = faceFeatures.getRightEye(grayFace)
+	print 'rightEye: ', rightEye
 
-	# # Get the rectangle bounding the nose in the input image
-	# nose = faceFeatures.getNose(grayFace)
-	# print 'nose: ', nose
+	# Get the rectangle bounding the nose in the input image
+	nose = faceFeatures.getNose(grayFace)
+	print 'nose: ', nose
 
-	# # Get the rectangle bounding the mouth in the input image
-	# mouth = faceFeatures.getMouth(grayFace)
-	# print 'mouth: ', mouth
+	# Get the rectangle bounding the mouth in the input image
+	mouth = faceFeatures.getMouth(grayFace)
+	print 'mouth: ', mouth
 
-	# # Get the rectangle bounding the eyepair in the input image
-	# eyepair = faceFeatures.getEyepair(grayFace)
-	# print 'eyepair: ', eyepair
+	# Get the rectangle bounding the eyepair in the input image
+	eyepair = faceFeatures.getEyepair(grayFace)
+	print 'eyepair: ', eyepair
 
-	# # Draw a rectangle on the input image around the left eye
-	# displayUtils.drawRectangle(inputImage, leftEye)
-	# # Draw a rectangle on the input image around the right eye
-	# displayUtils.drawRectangle(inputImage, rightEye)
-	# # Draw a rectangle on the input image around the nose
-	# displayUtils.drawRectangle(inputImage, nose)
-	# # Draw a rectangle on the input image around the mouth
-	# displayUtils.drawRectangle(inputImage, mouth)
-	# # Draw a rectangle on the input image around the eyepair
-	# displayUtils.drawRectangle(inputImage, eyepair)
+	# Draw a rectangle on the input image around the left eye
+	displayUtils.drawRectangle(inputImage, leftEye)
+	# Draw a rectangle on the input image around the right eye
+	displayUtils.drawRectangle(inputImage, rightEye)
+	# Draw a rectangle on the input image around the nose
+	displayUtils.drawRectangle(inputImage, nose)
+	# Draw a rectangle on the input image around the mouth
+	displayUtils.drawRectangle(inputImage, mouth)
+	# Draw a rectangle on the input image around the eyepair
+	displayUtils.drawRectangle(inputImage, eyepair)
 
 	# Display the input image
 	displayUtils.displayAndWait(inputImage)
