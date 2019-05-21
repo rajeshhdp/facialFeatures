@@ -23,9 +23,9 @@ def main():
 	inputImage = cv2.imread(sys.argv[1])
 
 	# Display an error message if the argument passed is not a valid image file
-	if inputImage == None:
-		print 'Please specify a valid input image'
-		sys.exit(-1)
+	#if inputImage == None:
+	#	print 'Please specify a valid input image'
+	#	sys.exit(-1)
 
 	# Convert the input image to grayscale
 	grayFace = cv2.cvtColor(inputImage, cv2.cv.CV_BGR2GRAY)
